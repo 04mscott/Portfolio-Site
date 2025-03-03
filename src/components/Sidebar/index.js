@@ -1,40 +1,31 @@
 import './index.scss'
-import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import { Link } from 'react-router-dom'
+import Logo from '../../assets/images/Maryland_Terrapins_logo.svg.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faHome, faLayerGroup, faToolbox, faUser } from '@fortawesome/free-solid-svg-icons'
 
-const Sidebar = () => (
+const Sidebar = ({ activeSection, lpRef, aboutRef, skillsRef, projectRef, contactRef }) => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo"/>
-            <img className='sub-logo' src={LogoSubtitle} alt="slobodan"/>
+            <img src={Logo} alt="logo"/>
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <button id='home-link' className={activeSection === 'home' ? 'active' : ''} onClick={() => lpRef.current.scrollIntoView({behavior: 'smooth'})} >
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+            </button>
+            <button id='about-link' className={activeSection === 'about' ? 'active' : ''} onClick={() => aboutRef.current.scrollIntoView({behavior: 'smooth'})}>
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+            </button>
+            <button id='skills-link' className={activeSection === 'skills' ? 'active' : ''} onClick={() => skillsRef.current.scrollIntoView({behavior: 'smooth'})}>
+                <FontAwesomeIcon icon={faToolbox} color="#4d4d4e" />
+            </button>
+            <button id='projects-link' className={activeSection === 'projects' ? 'active' : ''} onClick={() => projectRef.current.scrollIntoView({behavior: 'smooth'})}>
+                <FontAwesomeIcon icon={faLayerGroup} color="#4d4d4e" />
+            </button>
+            <button id='contact-link' className={activeSection === 'contact' ? 'active' : ''} onClick={() => contactRef.current.scrollIntoView({behavior: 'smooth'})}>
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
+            </button>
         </nav>
-        <ul>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/mason-t-scott/'>
-                    <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://github.com/04mscott'>
-                    <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
-                </a>
-            </li>
-        </ul>
     </div>
 )
 

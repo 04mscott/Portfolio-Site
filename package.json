@@ -12,6 +12,7 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "framer-motion": "^12.4.7",
     "gsap": "^3.12.7",
     "gsap-trial": "^3.12.7",
     "loaders.css": "^0.1.2",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0"
   }
 }

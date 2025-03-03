@@ -1,46 +1,75 @@
-import LogoTitle from '../../assets/images/logo-s.png'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
-import Logo from '../Logo'
-import Loader from 'react-loaders'
+import withScrollAnimation from '../Scroll'
+import LandingPage from '../Landingpage'
+import Sidebar from '../Sidebar'
+import About from '../About'
+import Skills from '../Skills'
+import Projects from '../Projects'
+import Contact from '../Contact'
+import Footer from '../Footer'
+import { useRef, useState, useEffect } from 'react'
 
+const AnimatedAbout = withScrollAnimation(About);
+const AnimatedSkills = withScrollAnimation(Skills);
+const AnimatedProjects = withScrollAnimation(Projects);
+const AnimatedContact = withScrollAnimation(Contact);
 
 const Home = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArr = ['a', 's', 'o', 'n']
-    const jobArray = ['U', 'M', 'D', ' ','S', 't', 'u', 'd', 'e', 'n', 't']
+    const lpRef = useRef(null)
+    const aboutRef = useRef(null)
+    const skillsRef = useRef(null)
+    const projectRef = useRef(null)
+    const contactRef = useRef(null)
+
+    const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 4000)
-    
-        return () => clearTimeout(timer) // Cleanup function to prevent issues
-    }, [])
+        const sections = [
+            { ref: lpRef, name: "home" },
+            { ref: aboutRef, name: "about" },
+            { ref: skillsRef, name: "skills" },
+            { ref: projectRef, name: "projects" },
+            { ref: contactRef, name: "contact" },
+        ];
 
-    return(
+        const handleScroll = () => {
+            let currentSection = '';
+            sections.forEach(({ ref, name }) => {
+                if (ref.current) {
+                    const { top, bottom } = ref.current.getBoundingClientRect();
+                    if (top <= window.innerHeight / 2 && bottom >= window.innerHeight / 2) {
+                        currentSection = name;
+                    }
+                }
+            });
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
         <>
-            <div className="container home-page">
-                <div className="text-zone">
-                    <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i,</span>
-                    <br />
-                    <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>
-                    <img src={LogoTitle} alt="developer" />
-                    <AnimatedLetters letterClass={letterClass} strArr={nameArr} idx={15}/>
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} strArr={jobArray} idx={19}/>
-                    </h1>
-                    <h2>Data Science / Machine Learning / Software Engineering</h2>
-                    <Link to='/contact' className='flat-button'>CONTACT ME</Link>
+        <Sidebar activeSection={activeSection} lpRef={lpRef} aboutRef={aboutRef} skillsRef={skillsRef} projectRef={projectRef} contactRef={contactRef} />
+            <div className='component-container' >
+                <div ref={lpRef} >
+                    <LandingPage projectRef={projectRef} contactRef={contactRef} aboutRef={aboutRef} />
                 </div>
-                <Logo />
+                <div ref={aboutRef} >
+                    <AnimatedAbout/>
+                </div>
+                <div ref={skillsRef} >
+                    <AnimatedSkills />
+                </div>
+                <div ref={projectRef} >
+                    <AnimatedProjects />
+                </div>
+                <div ref={contactRef} >
+                    <AnimatedContact />
+                </div>
+                <Footer />
             </div>
-            <Loader type="ball-pulse-sync" />
         </>
     )
 }
