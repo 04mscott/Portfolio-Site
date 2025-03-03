@@ -1,4 +1,41 @@
 .project-container {
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 350px;
+    background: #cdc8c6;
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 50px;
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+
+
+.project {
+    background: #e3e1e0;
+    text-wrap: wrap;
+    padding: 30px;
+    font-size: 10px;
+    box-shadow: 12px 12px 12px rgba($color: #000000, $alpha: 1.0),
+        -10px -10px -10px white;
+
+    img {
+        border: 1px black solid;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+    }
 }

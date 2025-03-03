@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 150px;
 
     img {
         width: 64px;
@@ -17,32 +17,41 @@
         }
     }
 
-    .legend
-
-    .images {
-        gap: 20px;
+    .contents {
         display: flex;
         flex-direction: row;
-        background: #cdc8c6;
-        border-radius: 20px;
-        padding: 5px;
-    }
+        gap: 40px;
 
-    .languages-container {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
+        .legend {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: space-between;
 
-    .frameworks-container {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
+            h3 {
+                display: flex;
+                justify-content: center;
+                background: tomato;
+                border-radius: 20px;
+                padding: 10px;
+                flex-direction: row;
+            }
+        }
 
-    .ide-container {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+        .images {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            div {
+                display: flex;
+                justify-content: space-around;
+                background: #cdc8c6;
+                border-radius: 20px;
+                padding: 10px;
+                flex-direction: row;
+            }
+        }
     }
 }
