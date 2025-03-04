@@ -24,11 +24,11 @@ const Skills = () => {
         <div className='skills-container' >
             <h2>Skills</h2>
             <div className='contents'>                  
-                <div className='language-contents' >
+                <div className='row' >
                     <div className='legend' >
                         <h3>Languages:</h3>
                     </div>
-                    <div className='language-images' >
+                    <div className='icons' >
                         <img src={pythonSVG} alt='python' />
                         <img src={javaSVG} alt='java' />
                         <img src={cSVG} alt='c' />
@@ -38,22 +38,22 @@ const Skills = () => {
                         <img src={htmlSVG} alt='html' />
                     </div>
                 </div>
-                <div className='framework-contents' >
+                <div className='row' >
                     <div className='legend' >
                         <h3>Frameworks & Libraries:</h3>
                     </div>
-                    <div className='framework-images' >
+                    <div className='icons' >
                             <img src={pandasSVG} alt='pandas' />
                             <img src={tensorflowSVG} alt='tensorflow' />
                             <img src={reactSVG} alt='react' />
                             <img src={springbootSVG} alt='springboot' />
                         </div>
                 </div>
-                <div className='tool-contents' >
+                <div className='row' >
                     <div className='legend' >
                         <h3>Tools & Platforms:</h3>
                     </div>
-                    <div className='tool-images' >
+                    <div className='icons' >
                             <img src={jupyterSVG} alt='jupyter' />
                             <img src={mysqlSVG} alt='mysql' />
                             <img src={awsSVG} alt='aws' />

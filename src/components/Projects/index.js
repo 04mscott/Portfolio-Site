@@ -20,7 +20,7 @@ const Projects = () => {
                     <AnimatedProject imgPath={maskApp} link={'https://face-mask-image-classification.onrender.com/'} title={'Face Mask Image Classifier'} langs={'Python'} tools={'TensorFlow, Numpy, TaiPy'} />
                 </div>
                 <div className='row'>
-                    <AnimatedProject imgPath={sortingBm} link={'https://github.com/04mscott/Sorting-Functions-C-'} title={'C Sorting Algorithms Benchmarks'} langs={'C, Python'} tools={'Libraries / Tools: MatPlotLib, Seaborn, Numpy'} />
+                    <AnimatedProject imgPath={sortingBm} link={'https://04mscott.github.io/Sorting-Functions-C-/'} title={'C Sorting Algorithms Benchmarks'} langs={'C, Python'} tools={'Libraries / Tools: MatPlotLib, Seaborn, Numpy'} />
                     <AnimatedProject imgPath={reportPng} link={reportPdf} title={'Data Analysis Report'} langs={'Python'} tools={'Pandas, MatPlotLib, Seaborn, Scipi Stats, Numpy'} />
                 </div>
             </div>

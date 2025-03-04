@@ -3,54 +3,78 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin: 150px;
 
-    img {
-        width: max(64px, 5vw);
-        height: max(64px, 5vw);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-        transition: transform 0.3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.2);
-        }
+    @media (max-width: 1260px) {
+        flex-direction: column;  
     }
 
     .contents {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         gap: 40px;
 
-        .legend {
+        .row {
+            gap: 20px;
             display: flex;
-            flex-direction: column;
-            color: white;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: left;
+            gap: 5vw;
 
-            h3 {
+            @media (max-width: 1260px){
                 display: flex;
+                flex-direction: column;
+                align-items: center;
                 justify-content: center;
+                margin: 0;
+                gap: 10px;
+            }
+
+            .legend {
+                width: 20vw;
                 background: tomato;
                 border-radius: 20px;
                 padding: 10px;
-                flex-direction: row;
-            }
-        }
 
-        .images {
-            gap: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+                @media (max-width: 1260px) {
+                    width: 70vw;
+                }
+            }
         
-            div {
+            .icons {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 40vw;
                 background: #cdc8c6;
                 border-radius: 20px;
                 padding: 10px;
                 flex-direction: row;
+
+                @media(max-width: 1260px) {
+                    width: 70vw;
+                }
+
+                img {
+                    width: 5vw;
+                    height: 5vw;
+                    transition: transform 0.1s ease-in-out;
+
+                    @media(max-width: 1260px) {
+                        width: 7vw;
+                        height: 7vw;
+                    }
+            
+                    &:hover {
+                        transform: scale(1.2);
+                        background: rgba($color: #fff, $alpha: 0.3);
+                        border-radius: 20px;
+                    }
+                }
             }
         }
     }
