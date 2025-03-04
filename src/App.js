@@ -1,16 +1,15 @@
 import './App.scss';
-import { Routes, Route } from 'react-router-dom'
-// import Sidebar from './components/Sidebar'
 import Home from './components/Home'
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Mason Scott'
+  }, [])
+  
   return (
     <>
-    <Routes>
-      <Route path="/" element={<Home />}>
-        {/* <Route index element={<Home />} /> */}
-      </Route>
-    </Routes>
+      <Home />
     </>
   )
 }
