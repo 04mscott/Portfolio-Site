@@ -1,7 +1,7 @@
 .project-container {
-    margin: 10px;
+    margin: 10px 8px;
+    margin-top: 0;
     padding: 20px;
-    padding-bottom: 350px;
     background: #cdc8c6;
     display: flex;
     flex-direction: column;
@@ -9,10 +9,17 @@
     justify-content: space-around;
     align-content: center;
     border-radius: 50px;
+    padding-bottom: 15vh;
+
+    @media (max-width: 1060px) {
+        padding: 5px;
+        margin: 5vw;
+    }
 
     h2 {
         text-align: center;
         font-size: 40px;
+        margin-bottom: 40px;
     }
 
     .project-grid {
@@ -20,22 +27,93 @@
         flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
+
+        @media (max-width: 1060px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 1260px) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center; 
+            }
+        }
     }
 }
 
+a {
+    text-decoration: none;
 
-.project {
-    background: #e3e1e0;
-    text-wrap: wrap;
-    padding: 30px;
-    font-size: 10px;
-    box-shadow: 12px 12px 12px rgba($color: #000000, $alpha: 1.0),
-        -10px -10px -10px white;
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-items: center;
+        background: #e3e1e0;
+        border-radius: 40px;
+        text-wrap: wrap;
+        padding: 10px;
+        width: 20vw;
+        height: max(28vw, 60vh - 20vw);
+        padding-bottom: 30px;
+        font-size: 10px;
+        margin: 10px 10px;
+        color: #4d4d4e;
+        font-size: 12px;
+        font-weight: 400;
 
-    img {
-        border: 1px black solid;
-        object-fit: cover;
-        width: 300px;
-        height: 300px;
+        h3 {
+            margin: 0 0;
+            margin-top: 3%;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0 0;
+        }
+
+        @media (max-width: 1260px) {
+            width: 60vh;
+            height: 70vh;
+        }
+        
+        @media (max-width: 1060px) {
+            width: 40vh;
+            height: auto;
+            margin-bottom: 50px;
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+            background: tomato;
+            color: white;
+        }
+
+        img {
+            border: 1px black solid;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-top: 10%;
+            width: 15vw;
+            height: 15vw;
+
+            @media (max-width: 1260px) {
+                width: 40vh;
+                height: 40vh;
+            }
+    
+            @media (max-width: 1060px) {
+                margin-top: 25px;
+                width: 30vh;
+                height: 30vh;
+            }
+        }
     }
 }

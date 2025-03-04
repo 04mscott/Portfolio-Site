@@ -5,17 +5,24 @@ import airApp from '../../assets/images/app_nyc.png'
 import sortingBm from '../../assets/images/All (10).png'
 import maskApp from '../../assets/images/incorrect_mask.png'
 import Project from './project'
+import withScrollAnimation from '../Scroll'
 
+
+const AnimatedProject = withScrollAnimation(Project, 1)
 
 const Projects = () => {
     return (
         <div className='project-container' >
             <h2>Projects</h2>
             <div className='project-grid' >
-                <Project imgPath={airApp} link={'https://air-quality-app-wr4z.onrender.com/'} title={'Air Quality Prediction App'} langs={'Python'} tools={'TensorFlow, Pandas, AWS, MySQL, StreamLit, OpenWeatherMap API'} />
-                <Project imgPath={maskApp} link={'https://github.com/04mscott/Face-Mask-Image-Classification'} title={'Face Mask Image Classifier'} langs={'Python'} tools={'TensorFlow, Numpy, TaiPy'} />
-                <Project imgPath={sortingBm} link={'https://github.com/04mscott/Sorting-Functions-C-'} title={'C Sorting Algorithms Benchmarks'} langs={'C, Python'} tools={'Libraries / Tools: MatPlotLib, Seaborn, Numpy'} />
-                <Project imgPath={reportPng} link={reportPdf} title={'Data Analysis Report'} langs={'Python'} tools={'Pandas, MatPlotLib, Seaborn, Scipi Stats, Numpy'} />
+                <div className='row'>
+                    <AnimatedProject imgPath={airApp} link={'https://air-quality-app-wr4z.onrender.com/'} title={'Air Quality Prediction App'} langs={'Python'} tools={'TensorFlow, Pandas, AWS, MySQL, StreamLit, OpenWeatherMap API'} />
+                    <AnimatedProject imgPath={maskApp} link={'https://github.com/04mscott/Face-Mask-Image-Classification'} title={'Face Mask Image Classifier'} langs={'Python'} tools={'TensorFlow, Numpy, TaiPy'} />
+                </div>
+                <div className='row'>
+                    <AnimatedProject imgPath={sortingBm} link={'https://github.com/04mscott/Sorting-Functions-C-'} title={'C Sorting Algorithms Benchmarks'} langs={'C, Python'} tools={'Libraries / Tools: MatPlotLib, Seaborn, Numpy'} />
+                    <AnimatedProject imgPath={reportPng} link={reportPdf} title={'Data Analysis Report'} langs={'Python'} tools={'Pandas, MatPlotLib, Seaborn, Scipi Stats, Numpy'} />
+                </div>
             </div>
         </div>
     )
