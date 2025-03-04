@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Site/static/css/main.7164711d.css",
+    "main.js": "/Portfolio-Site/static/js/main.d1972046.js",
+    "static/js/453.b3faef14.chunk.js": "/Portfolio-Site/static/js/453.b3faef14.chunk.js",
+    "static/media/HW 3 Report - Mason Scott.pdf": "/Portfolio-Site/static/media/HW 3 Report - Mason Scott.bc9e7591820ff485558a.pdf",
+    "static/media/incorrect_mask.png": "/Portfolio-Site/static/media/incorrect_mask.515813cf898d415046ff.png",
+    "static/media/profile.png": "/Portfolio-Site/static/media/profile.082803094d8a5f868e64.png",
+    "static/media/app_nyc.png": "/Portfolio-Site/static/media/app_nyc.b43d9caf846cd67f49f3.png",
+    "static/media/Maryland_Terrapins_logo.svg.png": "/Portfolio-Site/static/media/Maryland_Terrapins_logo.svg.3064253c78d148bf9977.png",
+    "static/media/Mason_Scott_Resume.pdf": "/Portfolio-Site/static/media/Mason_Scott_Resume.6a9760f59e9eb2613715.pdf",
+    "static/media/report.PNG": "/Portfolio-Site/static/media/report.e1431ac8632d5be8c256.PNG",
+    "static/media/All (10).png": "/Portfolio-Site/static/media/All (10).713bcf2b92c878258670.png",
+    "static/media/helvetica-neu.ttf": "/Portfolio-Site/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/Portfolio-Site/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/icons8-react-160.png": "/Portfolio-Site/static/media/icons8-react-160.89996b225745a7b82cf2.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/Portfolio-Site/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Portfolio-Site/index.html",
+    "main.7164711d.css.map": "/Portfolio-Site/static/css/main.7164711d.css.map",
+    "main.d1972046.js.map": "/Portfolio-Site/static/js/main.d1972046.js.map",
+    "453.b3faef14.chunk.js.map": "/Portfolio-Site/static/js/453.b3faef14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7164711d.css",
+    "static/js/main.d1972046.js"
+  ]
+}
