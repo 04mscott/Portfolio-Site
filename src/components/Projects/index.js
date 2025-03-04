@@ -17,7 +17,7 @@ const Projects = () => {
             <div className='project-grid' >
                 <div className='row'>
                     <AnimatedProject imgPath={airApp} link={'https://air-quality-app-wr4z.onrender.com/'} title={'Air Quality Prediction App'} langs={'Python'} tools={'TensorFlow, Pandas, AWS, MySQL, StreamLit, OpenWeatherMap API'} />
-                    <AnimatedProject imgPath={maskApp} link={'https://github.com/04mscott/Face-Mask-Image-Classification'} title={'Face Mask Image Classifier'} langs={'Python'} tools={'TensorFlow, Numpy, TaiPy'} />
+                    <AnimatedProject imgPath={maskApp} link={'https://face-mask-image-classification.onrender.com/'} title={'Face Mask Image Classifier'} langs={'Python'} tools={'TensorFlow, Numpy, TaiPy'} />
                 </div>
                 <div className='row'>
                     <AnimatedProject imgPath={sortingBm} link={'https://github.com/04mscott/Sorting-Functions-C-'} title={'C Sorting Algorithms Benchmarks'} langs={'C, Python'} tools={'Libraries / Tools: MatPlotLib, Seaborn, Numpy'} />
