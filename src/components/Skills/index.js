@@ -23,13 +23,11 @@ const Skills = () => {
     return (
         <div className='skills-container' >
             <h2>Skills</h2>
-            <div className='contents'>
-                <div className='legend' >
-                    <h3>Languages:</h3>
-                    <h3>Frameworks & Libraries:</h3>
-                    <h3>Tools & Platforms:</h3>
-                </div>
-                <div className='images' >
+            <div className='contents'>                  
+                <div className='language-contents' >
+                    <div className='legend' >
+                        <h3>Languages:</h3>
+                    </div>
                     <div className='language-images' >
                         <img src={pythonSVG} alt='python' />
                         <img src={javaSVG} alt='java' />
@@ -39,20 +37,30 @@ const Skills = () => {
                         <img src={cssSVG} alt='sass' />
                         <img src={htmlSVG} alt='html' />
                     </div>
+                </div>
+                <div className='framework-contents' >
+                    <div className='legend' >
+                        <h3>Frameworks & Libraries:</h3>
+                    </div>
                     <div className='framework-images' >
-                        <img src={pandasSVG} alt='pandas' />
-                        <img src={tensorflowSVG} alt='tensorflow' />
-                        <img src={reactSVG} alt='react' />
-                        <img src={springbootSVG} alt='springboot' />
+                            <img src={pandasSVG} alt='pandas' />
+                            <img src={tensorflowSVG} alt='tensorflow' />
+                            <img src={reactSVG} alt='react' />
+                            <img src={springbootSVG} alt='springboot' />
+                        </div>
+                </div>
+                <div className='tool-contents' >
+                    <div className='legend' >
+                        <h3>Tools & Platforms:</h3>
                     </div>
                     <div className='tool-images' >
-                        <img src={jupyterSVG} alt='jupyter' />
-                        <img src={mysqlSVG} alt='mysql' />
-                        <img src={awsSVG} alt='aws' />
-                        <img src={vscodeSVG} alt='vscode' />
-                        <img src={pycharmSVG} alt='pycharm' />
-                        <img src={intellijSVG} alt='intellij' />
-                    </div>
+                            <img src={jupyterSVG} alt='jupyter' />
+                            <img src={mysqlSVG} alt='mysql' />
+                            <img src={awsSVG} alt='aws' />
+                            <img src={vscodeSVG} alt='vscode' />
+                            <img src={pycharmSVG} alt='pycharm' />
+                            <img src={intellijSVG} alt='intellij' />
+                        </div>
                 </div>
             </div>
         </div>

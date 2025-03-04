@@ -7,8 +7,8 @@
     margin: 150px;
 
     img {
-        width: 64px;
-        height: 64px;
+        width: max(64px, 5vw);
+        height: max(64px, 5vw);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
         transition: transform 0.3s ease-in-out;
 
