@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.593b4a17.css",
-    "main.js": "/static/js/main.d395eae3.js",
+    "main.css": "/static/css/main.a64e0ce7.css",
+    "main.js": "/static/js/main.66219bb7.js",
     "static/js/453.b3faef14.chunk.js": "/static/js/453.b3faef14.chunk.js",
     "static/media/HW 3 Report - Mason Scott.pdf": "/static/media/HW 3 Report - Mason Scott.bc9e7591820ff485558a.pdf",
     "static/media/incorrect_mask.png": "/static/media/incorrect_mask.515813cf898d415046ff.png",
@@ -16,12 +16,12 @@
     "static/media/icons8-react-160.png": "/static/media/icons8-react-160.89996b225745a7b82cf2.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.593b4a17.css.map": "/static/css/main.593b4a17.css.map",
-    "main.d395eae3.js.map": "/static/js/main.d395eae3.js.map",
+    "main.a64e0ce7.css.map": "/static/css/main.a64e0ce7.css.map",
+    "main.66219bb7.js.map": "/static/js/main.66219bb7.js.map",
     "453.b3faef14.chunk.js.map": "/static/js/453.b3faef14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.593b4a17.css",
-    "static/js/main.d395eae3.js"
+    "static/css/main.a64e0ce7.css",
+    "static/js/main.66219bb7.js"
   ]
 }
