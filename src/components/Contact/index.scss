@@ -1,0 +1,42 @@
+.contact-container {
+    margin-top: 100px;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4d4d4e;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+        height: 400px;
+        width: 800px;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid black;
+
+            div {
+                border: 2px solid black;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-around;
+            border: 2px solid black;
+            width: 800px;
+            height: 350px;
+        }
+    }
+
+}

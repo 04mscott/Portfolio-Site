@@ -80,10 +80,10 @@ a {
             margin: 0 0;
         }
 
-        @media (max-width: 1260px) {
-            width: 60vh;
-            height: 70vh;
-        }
+        // @media (max-width: 1260px) {
+        //     width: 60vh;
+        //     height: 70vh;
+        // }
         
         @media (max-width: 1060px) {
             width: 40vh;
@@ -105,10 +105,10 @@ a {
             width: 15vw;
             height: 15vw;
 
-            @media (max-width: 1260px) {
-                width: 40vh;
-                height: 40vh;
-            }
+            // @media (max-width: 1260px) {
+            //     width: 40vh;
+            //     height: 40vh;
+            // }
     
             @media (max-width: 1060px) {
                 margin-top: 25px;
