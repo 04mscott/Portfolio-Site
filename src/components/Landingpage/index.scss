@@ -57,9 +57,9 @@
 
     h2{
         color: #8d8d8d;
-        font-weight: 900;
+        // font-weight: 900;
         margin-bottom: 10px;
-        font-size: 12px;
+        font-size: 100%;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
@@ -78,8 +78,8 @@
             animation: fadeIn 1.3s 3s backwards;
 
             div {
-                width: 30px;
-                height: 30px;
+                width: 3vh;
+                height: 3vh;
 
                 .icon {
                     width: fit-content;
@@ -102,12 +102,11 @@
 
         .flat-button{
             color: white;
-            font-size: 13;
-            font-weight: 400;
+            font-size: 100%;
             letter-spacing: 4px;
             font-family: sans-serif;
             text-decoration: none;
-            width: 200px;
+            width: 15vw;
             height: auto;
             border-radius: 20px;
             background: tomato;
