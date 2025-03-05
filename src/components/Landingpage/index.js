@@ -15,10 +15,14 @@ const LandingPage = ({ projectRef, contactRef, aboutRef }) => {
                     <h2>Data Science | Machine Learning | Software Engineering</h2>
                     <div className='social-media-container'>
                         <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/mason-t-scott/'>
-                            <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                            <div>
+                                <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                            </div>
                         </a>
                         <a target="_blank" rel='noreferrer' href='https://github.com/04mscott'>
-                            <FontAwesomeIcon icon={faGithubSquare} color='#4d4d4e' />
+                            <div>
+                                <FontAwesomeIcon icon={faGithubSquare} color='#4d4d4e' />
+                            </div>
                         </a>
                     </div>
                     <div className='button-container'>
