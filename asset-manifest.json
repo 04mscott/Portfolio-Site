@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.efe52693.css",
+    "main.css": "/static/css/main.6b1f5ea2.css",
     "main.js": "/static/js/main.b8cacbbf.js",
     "static/js/453.b3faef14.chunk.js": "/static/js/453.b3faef14.chunk.js",
     "static/media/HW 3 Report - Mason Scott.pdf": "/static/media/HW 3 Report - Mason Scott.bc9e7591820ff485558a.pdf",
@@ -16,12 +16,12 @@
     "static/media/icons8-react-160.png": "/static/media/icons8-react-160.89996b225745a7b82cf2.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.efe52693.css.map": "/static/css/main.efe52693.css.map",
+    "main.6b1f5ea2.css.map": "/static/css/main.6b1f5ea2.css.map",
     "main.b8cacbbf.js.map": "/static/js/main.b8cacbbf.js.map",
     "453.b3faef14.chunk.js.map": "/static/js/453.b3faef14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe52693.css",
+    "static/css/main.6b1f5ea2.css",
     "static/js/main.b8cacbbf.js"
   ]
 }
