@@ -3,32 +3,31 @@ import './index.scss'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-    const refForm = useRef()
-
+    const form = useRef();
     const sendEmail = (e) => {
-        e.preventDefault()
-        
-        emailjs.sendForm(
-            'gmail',
-            'template_vst6h6c',
-            refForm.current
-        )
+        e.preventDefault();
+        emailjs
+        .sendForm('service_d95z8zo', 'template_vst6h6c', form.current, {
+            publicKey: 'ptARwoRkNO90avIYL',
+        })
         .then(
             () => {
-                alert('Message successfully sent!')
-                window.location.reload(false)
+            alert('Email sent successfully');
+            window.location.reload(false)
             },
-            () => {
-                alert('Failed to send message, please try again')
-            }
-        )
-    }
+            (error) => {
+            alert('Email failed to send');
+            },
+        );
+    };
+
+    
 
     return (
         <div className='contact-container' >
             <h1>Contact Me</h1>
             <div className='contact-form' >
-                <form ref={refForm} onSubmit={sendEmail} >
+                <form ref={form} onSubmit={sendEmail} >
                     <div className='info-container'>
                         <input type='text' name='name' placeholder='Name' required />
                         <input type='email' name='email' placeholder='Email' required />
