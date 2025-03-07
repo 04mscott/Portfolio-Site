@@ -81,12 +81,12 @@
             animation: fadeIn 1.3s 3s backwards;
 
             div {
-                width: min(20px, 15vw);
-                height: min(20px, 15vw);
+                width: min(30px, 15vw);
+                height: min(30px, 15vw);
 
                 .icon {
-                    width: fit-content;
-                    height: fit-content;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             
