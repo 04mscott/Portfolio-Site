@@ -1,7 +1,7 @@
 import './index.scss'
 import reportPdf from '../../assets/files/HW 3 Report - Mason Scott.pdf'
 import reportPng from '../../assets/images/report.PNG'
-import airApp from '../../assets/images/app_nyc.png'
+import airApp from '../../assets/images/app_example.png'
 import sortingBm from '../../assets/images/All (10).png'
 import maskApp from '../../assets/images/incorrect_mask.png'
 import Project from './project'
