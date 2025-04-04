@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.376c2c55.css",
-    "main.js": "/static/js/main.b4bc86b1.js",
+    "main.css": "/static/css/main.f7cfaaa8.css",
+    "main.js": "/static/js/main.35f24aa4.js",
     "static/js/453.b3faef14.chunk.js": "/static/js/453.b3faef14.chunk.js",
     "static/media/HW 3 Report - Mason Scott.pdf": "/static/media/HW 3 Report - Mason Scott.bc9e7591820ff485558a.pdf",
     "static/media/incorrect_mask.png": "/static/media/incorrect_mask.515813cf898d415046ff.png",
     "static/media/profile.png": "/static/media/profile.082803094d8a5f868e64.png",
     "static/media/app_example.png": "/static/media/app_example.2bb9141eb37ac98ff774.png",
     "static/media/Maryland_Terrapins_logo.svg.png": "/static/media/Maryland_Terrapins_logo.svg.3064253c78d148bf9977.png",
+    "static/media/api_flowchart.png": "/static/media/api_flowchart.35192facc205cc663ebb.png",
     "static/media/Mason_Scott_Resume.pdf": "/static/media/Mason_Scott_Resume.d8469f41674b6510fdf1.pdf",
     "static/media/report.PNG": "/static/media/report.e1431ac8632d5be8c256.PNG",
     "static/media/All (10).png": "/static/media/All (10).713bcf2b92c878258670.png",
@@ -15,13 +16,15 @@
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/icons8-react-160.png": "/static/media/icons8-react-160.89996b225745a7b82cf2.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/icons8-docker.svg": "/static/media/icons8-docker.ce782f0383fb828fbe813ee23842263b.svg",
+    "static/media/icons8-numpy.svg": "/static/media/icons8-numpy.4701487d23f07eb837dce322cef93ab7.svg",
     "index.html": "/index.html",
-    "main.376c2c55.css.map": "/static/css/main.376c2c55.css.map",
-    "main.b4bc86b1.js.map": "/static/js/main.b4bc86b1.js.map",
+    "main.f7cfaaa8.css.map": "/static/css/main.f7cfaaa8.css.map",
+    "main.35f24aa4.js.map": "/static/js/main.35f24aa4.js.map",
     "453.b3faef14.chunk.js.map": "/static/js/453.b3faef14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.376c2c55.css",
-    "static/js/main.b4bc86b1.js"
+    "static/css/main.f7cfaaa8.css",
+    "static/js/main.35f24aa4.js"
   ]
 }
