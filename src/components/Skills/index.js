@@ -9,12 +9,14 @@ import sqlSVG from '../../assets/images/icons8-sql-96.png'
 
 import pandasSVG from '../../assets/images/icons8-pandas-96.png'
 import tensorflowSVG from '../../assets/images/icons8-tensorflow-144.png'
-import mysqlSVG from '../../assets/images/icons8-mysql-144.png'
-import awsSVG from '../../assets/images/icons8-aws-144.png'
-import jupyterSVG from '../../assets/images/icons8-jupyter-144.png'
 import reactSVG from '../../assets/images/icons8-react-160.png'
 import springbootSVG from '../../assets/images/icons8-spring-boot-80.png'
+import numpySVG from '../../assets/images/icons8-numpy.svg'
 
+import jupyterSVG from '../../assets/images/icons8-jupyter-144.png'
+import mysqlSVG from '../../assets/images/icons8-mysql-144.png'
+import awsSVG from '../../assets/images/icons8-aws-144.png'
+import dockerSVG from '../../assets/images/icons8-docker.svg'
 import vscodeSVG from '../../assets/images/icons8-vs-code-144.png'
 import pycharmSVG from '../../assets/images/icons8-pycharm-144.png'
 import intellijSVG from '../../assets/images/icons8-intellij-idea-144.png'
@@ -43,11 +45,12 @@ const Skills = () => {
                         <h3>Frameworks & Libraries:</h3>
                     </div>
                     <div className='icons' >
-                            <img src={pandasSVG} alt='pandas' />
-                            <img src={tensorflowSVG} alt='tensorflow' />
-                            <img src={reactSVG} alt='react' />
-                            <img src={springbootSVG} alt='springboot' />
-                        </div>
+                        <img src={numpySVG} alt='numpy' />
+                        <img src={pandasSVG} alt='pandas' />
+                        <img src={tensorflowSVG} alt='tensorflow' />
+                        <img src={reactSVG} alt='react' />
+                        <img src={springbootSVG} alt='springboot' />
+                    </div>
                 </div>
                 <div className='row' >
                     <div className='legend' >
@@ -57,6 +60,7 @@ const Skills = () => {
                             <img src={jupyterSVG} alt='jupyter' />
                             <img src={mysqlSVG} alt='mysql' />
                             <img src={awsSVG} alt='aws' />
+                            <img src={dockerSVG} alt='intellij' />
                             <img src={vscodeSVG} alt='vscode' />
                             <img src={pycharmSVG} alt='pycharm' />
                             <img src={intellijSVG} alt='intellij' />
