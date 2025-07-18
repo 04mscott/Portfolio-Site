@@ -59,6 +59,8 @@
             border-radius: 20px;
             background: tomato;
             animation: fadeIn 1.3s 2.4s backwards;
+            white-space: nowrap;
+            overflow: hidden;
     
             &:hover{
                 background: white;

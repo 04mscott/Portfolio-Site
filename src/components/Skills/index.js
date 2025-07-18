@@ -32,9 +32,9 @@ const Skills = () => {
                     </div>
                     <div className='icons' >
                         <img src={pythonSVG} alt='python' />
-                        <img src={javaSVG} alt='java' />
                         <img src={cSVG} alt='c' />
                         <img src={sqlSVG} alt='sql' />
+                        <img src={javaSVG} alt='java' />
                         <img src={javascriptSVG} alt='javascript' />
                         <img src={cssSVG} alt='sass' />
                         <img src={htmlSVG} alt='html' />
