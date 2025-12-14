@@ -2,6 +2,7 @@ import './index.scss'
 import pythonSVG from '../../assets/images/icons8-python-144.png'
 import javaSVG from '../../assets/images/icons8-java-144.png'
 import cSVG from '../../assets/images/icons8-c-programming-144.png'
+import cppSVG from '../../assets/images/icons8-c++-144.png'
 import javascriptSVG from '../../assets/images/icons8-javascript-144.png'
 import cssSVG from '../../assets/images/icons8-css-logo-144.png'
 import htmlSVG from '../../assets/images/icons8-html-5-144.png'
@@ -33,6 +34,7 @@ const Skills = () => {
                     <div className='icons' >
                         <img src={pythonSVG} alt='python' />
                         <img src={cSVG} alt='c' />
+                        <img src={cppSVG} alt='cpp' />
                         <img src={sqlSVG} alt='sql' />
                         <img src={javaSVG} alt='java' />
                         <img src={javascriptSVG} alt='javascript' />
