@@ -34,7 +34,7 @@ const Skills = () => {
                     <div className='icons' >
                         <img src={pythonSVG} alt='python' />
                         <img src={cSVG} alt='c' />
-                        <img src={cppSVG} alt='cpp' />
+                        {/* <img src={cppSVG} alt='cpp' /> */}
                         <img src={sqlSVG} alt='sql' />
                         <img src={javaSVG} alt='java' />
                         <img src={javascriptSVG} alt='javascript' />
@@ -51,7 +51,7 @@ const Skills = () => {
                         <img src={pandasSVG} alt='pandas' />
                         <img src={tensorflowSVG} alt='tensorflow' />
                         <img src={reactSVG} alt='react' />
-                        <img src={springbootSVG} alt='springboot' />
+                        {/* <img src={springbootSVG} alt='springboot' /> */}
                     </div>
                 </div>
                 <div className='row' >
@@ -61,7 +61,7 @@ const Skills = () => {
                     <div className='icons' >
                             <img src={jupyterSVG} alt='jupyter' />
                             <img src={mysqlSVG} alt='mysql' />
-                            <img src={awsSVG} alt='aws' />
+                            {/* <img src={awsSVG} alt='aws' /> */}
                             <img src={dockerSVG} alt='intellij' />
                             <img src={vscodeSVG} alt='vscode' />
                             <img src={pycharmSVG} alt='pycharm' />
