@@ -12,16 +12,17 @@ const About = () => {
                 <img src={ProfileImg} alt='profile' />
                 <div className='text-container'>
                     <p>
-                        I'm a Computer Science student at the University of Maryland (Data Science track, Statistics minor)
-                        with a strong interest in building practical, production-minded systems.
+                        CS grad from the University of Maryland, where I studied Computer Science 
+                        (Data Science track) with a minor in Statistics.
                     </p>
                     <p>
-                        I'm currently an AI Engineering Intern at Experio AI, where I design and implement agentic LLM
-                        systems from scratch to parse, structure, and reason over large, unstandardized RFP documents.
+                        Most recently I interned at Experio AI, building agentic LLM systems and document processing 
+                        pipelines from scratch. Before that, I led data engineering on EngageCS, a production analytics 
+                        platform commissioned by a UMD instructor and used live in his courses.
                     </p>
                     <p>
-                        My experience spans backend systems, data pipelines, and full-stack applications, with a focus
-                        on ownership, clean system design, and learning through hands-on engineering work.
+                        I care about building things that actually work; clean data models, well-designed systems, 
+                        and software that holds up under real use.
                     </p>
 
                 </div>
