@@ -25,7 +25,7 @@ const Projects = () => {
                     </div>
                     <div className='sub_row'>
                         <AnimatedProject imgPath={recAPI} link={'https://04mscott.github.io/Recommendation-API/'} title={'Recommendation Engine API'} langs={'Python'} tools={'FastAPI, Pandas, Numpy, Sklearn, Docker, Celery, Redis'} />
-                        <AnimatedProject imgPath={airApp} link={'https://air-quality-app-wr4z.onrender.com/'} title={'Air Quality Prediction App - LSTM'} langs={'Python'} tools={'TensorFlow, Pandas, AWS, MySQL, StreamLit, OpenWeatherMap API'} />
+                        <AnimatedProject imgPath={airApp} link={'https://04mscott.github.io/Air-Quality-App//'} title={'Air Quality Prediction App - LSTM'} langs={'Python'} tools={'TensorFlow, Pandas, AWS, MySQL, StreamLit, OpenWeatherMap API'} />
                     </div>
                 </div>
                 <div className='row'>
